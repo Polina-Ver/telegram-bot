@@ -1,8 +1,8 @@
 import asyncio
 from aiogram import Bot, Dispatcher
 from config import TOKEN
-from handlers import router, set_my_commands  # Импортируем router
-
+from handlers.handlers import router
+from handlers import set_my_commands
 
 async def main():
     bot = Bot(token=TOKEN)
