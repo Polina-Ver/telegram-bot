@@ -54,5 +54,37 @@ docker ps
 4. Для автоматизированной сборки нескольких контейнеров воспользуйтесь `docker-compose`
 
 ```
-docker-compose -up --build -d
+docker-compose up --build -d
 ```
+
+Проверить состоятние запущенного контейнера для `docker-compose`
+
+```
+docker-compose ps
+```
+
+5. Если вы хотите остановить контейнер `docker`
+
+```
+docker stop <ID-контейнера>
+```
+
+Для удаления контейнера
+
+```
+docker rm <ID-контейнера>
+```
+
+Если вы хотите остановить `docker-compose`
+
+```
+docker-compose down
+```
+
+Перезапустить контейнеры
+
+```
+docker-compose restart
+```
+
+
