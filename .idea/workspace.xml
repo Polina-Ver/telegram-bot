@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae8121da-0f09-40d0-bd4d-568fc145ca77" name="Changes" comment="сделали коммит файлов">
-      <change beforePath="$PROJECT_DIR$/.idea/keyboard-callbacks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/keyboard-callbacks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
+    <list default="true" id="ae8121da-0f09-40d0-bd4d-568fc145ca77" name="Changes" comment="исправили ошибки в файле main">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746011211577</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="исправили ошибки в файле main">
+      <option name="closed" value="true" />
+      <created>1746012124445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746012124445</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +225,7 @@
     <MESSAGE value="сделала хендлерсы" />
     <MESSAGE value="исправила конфликты, чтобы проект успешно запускался" />
     <MESSAGE value="сделали коммит файлов" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделали коммит файлов" />
+    <MESSAGE value="исправили ошибки в файле main" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправили ошибки в файле main" />
   </component>
 </project>
