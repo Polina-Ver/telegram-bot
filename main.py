@@ -1,22 +1,23 @@
-# version: 0.1.0
 import asyncio
 from aiogram import Bot, Dispatcher
-from aiogram.filters import Command
 from config import TOKEN
-
-bot = Bot(token=TOKEN)
-dp = Dispatcher()
-
-@dp.message(Command('start'))
-async def process_start_command(message):
-    await message.answer("Привет!")
-
-@dp.message()
-async def echo_message(message):
-    await message.answer(message.text)
+from handlers import router as router_handlers
+from handlers import set_my_commands
+from handlers.callbacks import router as router_callbacks
 
 async def main():
+    bot = Bot(token=TOKEN)
+    dp = Dispatcher()
+
+    #Определение маршрутизации для диспетчера из handlers
+    dp.include_routers(router_handlers, router_callbacks)
+
+    # Установка команд меню
+    await set_my_commands(bot)
+
+    # Запуск бота
     await dp.start_polling(bot)
+
 
 if __name__ == "__main__":
     asyncio.run(main())
