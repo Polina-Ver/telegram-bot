@@ -1,5 +1,4 @@
-# Файл __init__.py.py позволяет обращаться к папке как к модулю
-# и импортировать из него содержимое
+from .handlers import router  # Импортируем router вместо register_message_handlers
+from .commands import set_my_commands
 
-from .handlers import register_message_handlers
-from .bot_commands import set_my_commands
+__all__ = ['router', 'set_my_commands']  # Обновляем список экспортируемых объектов

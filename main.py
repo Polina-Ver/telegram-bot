@@ -1,27 +1,20 @@
-# version1.0.0
 import asyncio
 from aiogram import Bot, Dispatcher
 from config import TOKEN
-from handlers import register_message_handlers, set_my_commands
+from handlers import router, set_my_commands  # Импортируем router
 
 
 async def main():
-    """
-    Основная функция для установки конфигурации бота.
-    Для создания бота необходимо получить token в telegram https://t.me/BotFather
-    и добавить полученный токен в файл .env
-    """
-
     bot = Bot(token=TOKEN)
     dp = Dispatcher()
 
-    # Здесь функция для вызова хендлеров из handlers.py
-    register_message_handlers()
+    # Подключаем роутер к диспетчеру
+    dp.include_router(router)
 
-    # Здесь вызов меню с командами бота
-    set_my_commands
+    # Установка команд меню
+    await set_my_commands(bot)
 
-    # Запуск бота в polling-режиме
+    # Запуск бота
     await dp.start_polling(bot)
 
 

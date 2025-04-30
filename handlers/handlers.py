@@ -1,21 +1,13 @@
-__all__ = [
-    "router",
-]
-
 from aiogram.filters import Command
-from aiogram import Router
-from .keyboard import keyboards  # импорт из клавиатур
-from .callbacks import callback_message  # импорт из коллбека
+from aiogram import Router, types
+from .keyboard import keyboards
 
-#Создание экземпляра объекта Router
-router = Router()
+router = Router()  # Создаем один роутер для всех обработчиков
 
 @router.message(Command("help"))
-async def process_help_command(message):
-    '''Команда help'''
+async def process_help_command(message: types.Message):
     await message.answer("Помощь пришла!", reply_markup=keyboards)
 
 @router.message(Command(commands=["start", "status"]))
-async def process_start_command(message):
-    '''Команда status'''
+async def process_start_command(message: types.Message):
     await message.reply(f"{message.from_user.id}, {message.from_user.username}")
