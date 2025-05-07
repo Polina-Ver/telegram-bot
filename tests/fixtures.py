@@ -3,6 +3,7 @@ from unittest.mock import AsyncMock, patch
 from aiogram.types import Message
 from aiogram import Router
 
+
 # Фикстуры в pytest позволяют выносить в отдельные функции типовые действия
 # например: настройка тестового окружения, создание тестовых данных, выполнение завершающие действия
 # https://habr.com/ru/articles/731296/
@@ -15,11 +16,13 @@ def mock_bot():
         mock_bot_cls.return_value = mock_bot_instance
         yield mock_bot_instance
 
+
 @pytest.fixture
 def mock_set_my_commands():
     """Mock созданием меню"""
     with patch("main.set_my_commands", new_callable=AsyncMock) as mock:
         yield mock_set_my_commands
+
 
 @pytest.fixture
 def mock_setup_logger():

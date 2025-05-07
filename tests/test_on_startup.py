@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
+
 # TODO костыль
 parent = Path(f"{os.getcwd()}").parent
 print(parent)
@@ -22,4 +23,7 @@ def test_env_file_exists():
 def test_env_variable_loaded():
     load_dotenv()
     bot_token = os.getenv("TOKEN")
+
     assert bot_token, "TOKEN не найден в переменных окружения"
+    
+
