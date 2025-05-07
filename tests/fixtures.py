@@ -30,7 +30,6 @@ def mock_setup_logger():
     with patch("main.setup_logger", new_callable=AsyncMock) as mock:
         yield mock_setup_logger
 
-
 @pytest.fixture
 def mock_dispatcher():
     """Mock диспетчер"""
@@ -64,13 +63,11 @@ def mock_router():
     callbacks_router = AsyncMock()
     return router
 
-
 @pytest.fixture
 def mock_router_handlers():
     """Mock роутер"""
     router = Router()
     return router
-
 
 @pytest.fixture
 def mock_router_callbacks():
