@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052dfa72-583f-4449-9c43-8399439f6f8e" name="Changes" comment="обновили docker файлы" />
+    <list default="true" id="052dfa72-583f-4449-9c43-8399439f6f8e" name="Changes" comment="добавили пакет script">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="testing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +35,8 @@
     "Python.handlers.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true"
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "refactor-script"
   }
 }]]></component>
   <component name="RunManager">
@@ -149,7 +152,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae8121da-0f09-40d0-bd4d-568fc145ca77" name="Changes" comment="" />
+      <changelist id="052dfa72-583f-4449-9c43-8399439f6f8e" name="Changes" comment="обновили docker файлы" />
       <created>1745930601562</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -203,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746012124445</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="добавили пакет script">
+      <option name="closed" value="true" />
+      <created>1750849041151</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750849041151</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +234,7 @@
     <MESSAGE value="исправила конфликты, чтобы проект успешно запускался" />
     <MESSAGE value="сделали коммит файлов" />
     <MESSAGE value="исправили ошибки в файле main" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправили ошибки в файле main" />
+    <MESSAGE value="добавили пакет script" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили пакет script" />
   </component>
 </project>
