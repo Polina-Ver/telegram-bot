@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052dfa72-583f-4449-9c43-8399439f6f8e" name="Changes" comment="обновили docker файлы">
+    <list default="true" id="052dfa72-583f-4449-9c43-8399439f6f8e" name="Changes" comment="добавили пакет script">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746012124445</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="добавили пакет script">
+      <option name="closed" value="true" />
+      <created>1750849041151</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750849041151</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +234,7 @@
     <MESSAGE value="исправила конфликты, чтобы проект успешно запускался" />
     <MESSAGE value="сделали коммит файлов" />
     <MESSAGE value="исправили ошибки в файле main" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправили ошибки в файле main" />
+    <MESSAGE value="добавили пакет script" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили пакет script" />
   </component>
 </project>
