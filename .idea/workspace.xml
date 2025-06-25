@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052dfa72-583f-4449-9c43-8399439f6f8e" name="Changes" comment="обновили docker файлы" />
+    <list default="true" id="052dfa72-583f-4449-9c43-8399439f6f8e" name="Changes" comment="слила изменения, отредактировала main, handlers, callbacks, keyboard">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,16 +29,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.__init__.executor": "Run",
-    "Python.handlers.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in test_bot_callbacks.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_bot_handlers.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_bot_main.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_on_startup.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.handlers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;refactor-script&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="handlers_bot-commands" />
@@ -143,13 +151,14 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
+        <option value="bundled-python-sdk-fc1d50d2d915-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.24978.54" />
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae8121da-0f09-40d0-bd4d-568fc145ca77" name="Changes" comment="" />
+      <changelist id="052dfa72-583f-4449-9c43-8399439f6f8e" name="Changes" comment="слилиа ветки" />
       <created>1745930601562</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -203,7 +212,39 @@
       <option name="project" value="LOCAL" />
       <updated>1746012124445</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="описали модель таблицы User">
+      <option name="closed" value="true" />
+      <created>1747149235984</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747149235984</updated>
+    </task>
+    <task id="LOCAL-00008" summary="описали клавиатуру Выберите роль">
+      <option name="closed" value="true" />
+      <created>1747149273561</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747149273561</updated>
+    </task>
+    <task id="LOCAL-00009" summary="описали клавиатуру Выберите роль">
+      <option name="closed" value="true" />
+      <created>1747149551561</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747149551561</updated>
+    </task>
+    <task id="LOCAL-00010" summary="слила изменения, отредактировала main, handlers, callbacks, keyboard">
+      <option name="closed" value="true" />
+      <created>1750858149341</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1750858149341</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +264,11 @@
     <MESSAGE value="исправила конфликты, чтобы проект успешно запускался" />
     <MESSAGE value="сделали коммит файлов" />
     <MESSAGE value="исправили ошибки в файле main" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправили ошибки в файле main" />
+    <MESSAGE value="слилиа ветки develop и testing" />
+    <MESSAGE value="слилиа ветки" />
+    <MESSAGE value="описали модель таблицы User" />
+    <MESSAGE value="описали клавиатуру Выберите роль" />
+    <MESSAGE value="слила изменения, отредактировала main, handlers, callbacks, keyboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="слила изменения, отредактировала main, handlers, callbacks, keyboard" />
   </component>
 </project>
