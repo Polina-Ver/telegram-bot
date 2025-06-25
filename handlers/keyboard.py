@@ -1,23 +1,19 @@
+from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram import types
 
+def keyboard() -> types.InlineKeyboardMarkup:
+    builder = InlineKeyboardBuilder()
+    builder.add(types.InlineKeyboardButton(
+        text="кнопка",
+        callback_data="random_value")
+    )
+    return builder.as_markup()
 
-#Inline-кнопка "Далее"
-#Inline-кнопка "Слушатель"
-#Inline-кнопка "Преподаватель"
+button_tutor = InlineKeyboardButton(text="Преподаватель", callback_data="button_tutor")
+button_student = InlineKeyboardButton(text="Слушатель", callback_data="button_student")
 
-button_continue = InlineKeyboardButton(text="Далее", callback_data="button_continue")
-button_tutor = InlineKeyboardButton(text="Слушатель", callback_data="button_tutor")
-button_student = InlineKeyboardButton(text="Преподаватель", callback_data="button_student")
-
-#Inline-клавиатура "Продолжить"
-#Inline-клавиатура "Выберите роль"
-keyboard_continue = InlineKeyboardMarkup(inline_keyboard=[
-        [button_continue, ]
-    ])
-
-keyboard_start = InlineKeyboardMarkup(inline_keyboard=[
-        [button_student, button_tutor]
-    ])
+keyboard_start = InlineKeyboardMarkup(inline_keyboard=[[button_tutor, button_student]])
 
 
 

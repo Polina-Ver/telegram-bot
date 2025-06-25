@@ -1,16 +1,7 @@
-__all__ = [
-    "User",
-    "Base",
-]
+__all__ = ["User","Base",]
 
-# Про ORM-паттерн асинхронного sqlalchemy и модели
-# https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html#synopsis-orm
-
-# декларативная модель базы данных python
-# https://metanit.com/python/database/3.2.php
 from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy import Column, DATE, Integer, VARCHAR, Text
-from datetime import datetime
+from sqlalchemy import Column, Integer, VARCHAR, Text
 
 class Base(DeclarativeBase):
     pass
@@ -22,4 +13,3 @@ class User(Base):
     tutorcode = Column(VARCHAR(6), unique=False)
     subscribe = Column(VARCHAR(6), unique=False)
     extra = Column(Text, unique=False)
-
